@@ -3,18 +3,18 @@ import java.util.List;
 
 public class TrainConsistManagementApp {
     public static void main(String[] args) {
-        // UC5: Preserve Insertion Order of Bogies (LinkedHashSet)
-        System.out.println("=== Train Consist Management App (UC5) ===");
+        // UC6: Map Bogie to Capacity (HashMap)
+        System.out.println("=== Train Consist Management App (UC6) ===");
 
-        java.util.LinkedHashSet<String> formation = new java.util.LinkedHashSet<>();
+        java.util.HashMap<String, Integer> bogieCapacity = new java.util.HashMap<>();
 
-        formation.add("Engine");
-        formation.add("Sleeper");
-        formation.add("Cargo");
-        formation.add("Guard");
-        formation.add("Sleeper"); // duplicate
+        bogieCapacity.put("Sleeper", 72);
+        bogieCapacity.put("AC Chair", 50);
+        bogieCapacity.put("First Class", 30);
 
-        System.out.println("Bogies added (including duplicate): Engine, Sleeper, Cargo, Guard, Sleeper");
-        System.out.println("Final train formation (unique, ordered): " + formation);
+        System.out.println("Bogie-Capacity Mapping:");
+        for (java.util.Map.Entry<String, Integer> entry : bogieCapacity.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue() + " seats");
+        }
     }
 }
