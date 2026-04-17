@@ -1,6 +1,6 @@
-# Train Consist Management - UC 7-14
+# Train Consist Management - UC 7-15
 
-Complete implementation of Use Cases 7-14 for Train Consist Management System.
+Complete implementation of Use Cases 7-15 for Train Consist Management System.
 
 ## Project Structure
 
@@ -12,6 +12,7 @@ train-consist-management/
 │   │       ├── Bogie.java
 │   │       ├── GoodsBogie.java
 │   │       ├── InvalidCapacityException.java
+│   │       ├── CargoSafetyException.java (NEW - UC15)
 │   │       ├── UC7_SortByComparator.java
 │   │       ├── UC8_FilterWithStreams.java
 │   │       ├── UC9_GroupByType.java
@@ -19,9 +20,11 @@ train-consist-management/
 │   │       ├── UC11_ValidateRegex.java
 │   │       ├── UC12_SafetyCompliance.java
 │   │       ├── UC13_PerformanceComparison.java
-│   │       └── UC14_CustomException.java
+│   │       ├── UC14_CustomException.java
+│   │       └── UC15_CargoSafetyAssignment.java (NEW)
 │   └── test/java/
 │       └── com/train/management/
+│           └── UC15_CargoSafetyAssignmentTest.java (NEW)
 ├── pom.xml
 └── README.md
 ```
